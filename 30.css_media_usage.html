@@ -1,0 +1,84 @@
+<html>
+<head>
+	<title>CSS - Grid; Usage</title>
+	<style>
+		body {
+			margin: 0px;
+		}
+		a {
+			text-decoration: none;
+			color: white;
+		}
+		h1 {
+			background: blue;
+			font-size: 45px;
+			text-align: center;
+			border-bottom: 2px solid red;
+			margin: 0px;
+			padding: 20px;
+		}
+		#grid ol {
+			background: silver;
+			color: white;
+			
+			border-right: 1px solid gray;
+			width: 100px;
+			margin: 0;
+			
+			padding: 20px;
+			padding-left: 33px;
+		}
+		#grid {
+			display: grid;
+			grid-template-columns: 150px 1fr;
+		}
+		#contents {
+			padding-left: 15px;
+		}
+		@media(max-width:800px) {
+			#grid {
+				display: block;
+			}
+			#grid ol {
+				background: white;
+				color: black;
+				
+				border-right: none;
+			}
+			#grid a{
+				color: black;
+			}
+			h1 {
+				border-bottom: none;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1><a href="index.html">Programming Languages</a></h1>
+	<div id="grid">
+		<ol>
+			<li><a href="C_lang.html">C언어</a></li>
+			<li><a href="Java.html">Java</a></li>
+			<li><a href="Python.html">Python</a></li>
+		</ol>
+		<div id="contents">
+			<h2>Python</h2>
+			<p>
+				Python은 최근 각광받고 있는 언어로 다양한 분야에 이용되고 있다.
+			</p>
+			<ul>
+				<li>시스템 유틸리티 제작</li>
+				<li>GUI 프로그래밍; Tkinter, PyQt, PySide2</li>
+				<li>C/C++와의 결합</li>
+				<li>웹 프로그래밍; 게시판, 방명록 만들기</li>
+				<li>수치 연산 프로그래밍; NumPy</li>
+				<li>데이터베이스 프로그래밍; Oracle, sqlite</li> 
+				<li>데이터 분석; pandas</li>
+				<li>사물 인터넷; Raspberry Pi</li>
+				<li>모바일 프로그래밍; Kivy</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

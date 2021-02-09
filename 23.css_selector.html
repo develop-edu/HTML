@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>CSS - Selector</title>
+	<style>
+		h1 {
+			background: black;
+			color: cyan;
+			font-family: "Times New Roman";
+			font-size: 45px;
+		}
+		#id_selector {
+			font-family: "Arial Black";  <!-- Times New Roman, Cooper Black, 휴먼둥근헤드라인 -->;
+			font-size: 28px;
+			text-decoration: underline;
+		}
+		.class1 {	<!-- class selector 1. ; 테스트 후 .class2 아래로 이동하여 다시 테스트-->
+			font-size: 24px;		
+			color: green;
+		}
+		.class2 {	<!-- class selector 2 -->
+			font-size: 18px;
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<h1>&lt;H1&gt; Tag Selector</h1>
+	<li class="class_selector" id="id_selector">First</li>
+	<li class="class1 class2">Second</li>
+	<li class="class1">Third</li>
+</body>
+</html>
